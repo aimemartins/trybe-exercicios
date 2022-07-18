@@ -1,0 +1,13 @@
+        h1,p {
+            text-align: center;
+        }
+        ol:hover, ul:hover {
+            background-color: cornflowerblue;
+        }
+        li:active {
+            font-family:sans-serif, helvetica;
+            font-size: 20px;
+        }
+        li {
+            list-style: none;
+        }

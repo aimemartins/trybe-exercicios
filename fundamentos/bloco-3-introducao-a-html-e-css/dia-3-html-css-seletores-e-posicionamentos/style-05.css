@@ -1,0 +1,39 @@
+ol li {
+    background-color: yellow;
+}
+
+ol li:nth-child(even){
+    color: green;
+}
+
+ol li:nth-child(odd){
+    text-transform: uppercase;
+}
+/* Segunda questão */
+h1,h3 {
+    color: red;
+}
+
+h1 em, h3 em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+/* Terceira questão */
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+/* Quarta questão */
+
+NÃO SEI FAZER
+
+/* QUINTA questão */
+
+ul li a:hover {
+    font-weight: bold;
+    color: pink ;
+}
