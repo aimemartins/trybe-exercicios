@@ -127,10 +127,36 @@ const lucro = valorVenda - valorCustoTotal;
 if (valorCusto < 0 || valorVenda < 0) {
     console.log("Erro!")
 } else {
-    console.log (lucro*1000)
+    console.log(lucro * 1000)
 }
 
 // Décima Primeira Questão
 
+let salarioBruto = 3000;
+let salarioDescInss = 0;
 
+if (salarioBruto < 1556.94) {
+    salarioDescInss = salarioBruto - (8 / 100) * salarioBruto
+} else if (salarioBruto < 2594.92) {
+    salarioDescInss = salarioBruto - (9 / 100) * salarioBruto
+} else if (salarioBruto < 5189.82) {
+    salarioDescInss = salarioBruto - (11 / 100) * salarioBruto
+} else if (salarioBruto >= 5189.82) {
+    salarioDescInss = salarioBruto - 570.88
+}
+console.log("O salário com o desconto do INSS será de:", salarioDescInss)
+let salarioLiq = 0;
 
+if (salarioDescInss <= 1903.98) {
+    salarioLiq = salarioDescInss
+} else if (salarioDescInss <= 2826.65) {
+    salarioLiq = salarioDescInss - (((7.5 / 100) * salarioDescInss) - 142.80)
+} else if (salarioDescInss <= 3751.05) {
+    salarioLiq = salarioDescInss - (((15 / 100) * salarioDescInss) - 354.80)
+} else if (salarioDescInss <= 2826.65) {
+    salarioLiq = salarioDescInss - (((22.5 / 100) * salarioDescInss) - 636.13)
+} else if (salarioDescInss <= 2826.65) {
+    salarioLiq = salarioLiq - (((27.5 / 100) * salarioDescInss) - 869.36)
+}
+
+console.log("O salário líquido já com desconto do INSS e do Imposto de Renda é :", salarioLiq)
