@@ -86,6 +86,14 @@
         };
         corrigirTexto();
 
+        // Exercício 05 - Crie e execute uma função que modifique todo o texto da tag <p> para maiúsculo.
+
+        function editarTagMaiuscula () {
+            let paragrafo = document.getElementsByTagName('p')[0];
+            paragrafo.innerHTML = paragrafo.innerHTML.toUpperCase();
+        }
+        editarTagMaiuscula ();
+        
 
     </script>
   </body>
