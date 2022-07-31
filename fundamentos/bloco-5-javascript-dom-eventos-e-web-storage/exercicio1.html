@@ -93,7 +93,16 @@
             paragrafo.innerHTML = paragrafo.innerHTML.toUpperCase();
         }
         editarTagMaiuscula ();
-        
+
+        // Exercício 06 - Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
+
+        function exibirConteudoConsole () {
+            let paragraf = document.getElementsByTagName('p');
+            for (let i = 0; i < paragraf.length; i += 1) {
+                console.log(paragraf[i].innerHTML);
+            }
+        };
+        exibirConteudoConsole();
 
     </script>
   </body>
