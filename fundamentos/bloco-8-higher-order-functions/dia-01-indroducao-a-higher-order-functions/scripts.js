@@ -1,4 +1,4 @@
-// Questão 01
+// ------------------------------------------Questão 01
 const dataEmployees = (nomeCompleto) => {
   const email = nomeCompleto.toLowerCase().split(' ').join('_')
   return { nome: nomeCompleto, email: `${email}@trybe.com` };
@@ -14,7 +14,8 @@ const newEmployees = (callback) => {
 };
 console.log(newEmployees(dataEmployees));
 console.log('------------------------------');
-// Questão 2
+
+// ------------------------------------------Questão 2
 
 const matchComSorteado = (nApostado, nSorteado) => nApostado === nSorteado
 const resultSorteio = (nApostado, matchComSorteado) => {
@@ -23,9 +24,9 @@ const resultSorteio = (nApostado, matchComSorteado) => {
 }
 
 console.log(resultSorteio(4, matchComSorteado));
-
 console.log('------------------------------');
-// Questão 3
+
+// ------------------------------------------Questão 3
 const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
 const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 const compareAnswers = (rightAnswer, studentAnswer) => {
@@ -47,4 +48,8 @@ const countPoints = (rightAnswers, studentAnswers, action) => {
 };
 
 console.log(countPoints(RIGHT_ANSWERS, STUDENT_ANSWERS, compareAnswers));
+console.log('------------------------------');
+
+
+
 
