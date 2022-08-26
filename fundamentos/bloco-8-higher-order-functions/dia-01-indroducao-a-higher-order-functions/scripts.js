@@ -13,7 +13,9 @@ const newEmployees = (callback) => {
   return employees;
 };
 console.log(newEmployees(dataEmployees));
-console.log('------------------------------');
+
+
+console.log('--------------------------------------------------------');
 
 // ------------------------------------------Questão 2
 
@@ -24,7 +26,7 @@ const resultSorteio = (nApostado, matchComSorteado) => {
 }
 
 console.log(resultSorteio(4, matchComSorteado));
-console.log('------------------------------');
+console.log('-----------------------------------------------------------');
 
 // ------------------------------------------Questão 3
 const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
