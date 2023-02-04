@@ -1,0 +1,1 @@
+const calculaIMC = (peso, altura) => peso / altura * altura 
